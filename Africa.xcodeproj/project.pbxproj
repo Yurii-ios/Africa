@@ -36,6 +36,7 @@
 		F1E81A0C259B90A900E8653C /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E81A0B259B90A900E8653C /* AnimalModel.swift */; };
 		F1E81A0F259BBAC200E8653C /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E81A0E259BBAC200E8653C /* AnimalDetailView.swift */; };
 		F1E81A12259BC3D100E8653C /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E81A11259BC3D100E8653C /* HeadingView.swift */; };
+		F1E81A15259BC6CA00E8653C /* InsetGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E81A14259BC6CA00E8653C /* InsetGalleryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		F1E81A0B259B90A900E8653C /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
 		F1E81A0E259BBAC200E8653C /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
 		F1E81A11259BC3D100E8653C /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
+		F1E81A14259BC6CA00E8653C /* InsetGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGalleryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				F1E81A08259B8C3F00E8653C /* AnimalListItemView.swift */,
 				F1E81A0E259BBAC200E8653C /* AnimalDetailView.swift */,
 				F1E81A11259BC3D100E8653C /* HeadingView.swift */,
+				F1E81A14259BC6CA00E8653C /* InsetGalleryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				F17C360D25964333005D94A0 /* AfricaApp.swift in Sources */,
 				F17C363E25966173005D94A0 /* VideoListView.swift in Sources */,
 				F17C3644259661CA005D94A0 /* GalleryView.swift in Sources */,
+				F1E81A15259BC6CA00E8653C /* InsetGalleryView.swift in Sources */,
 				F17C365425968A24005D94A0 /* CodableBundleExtension.swift in Sources */,
 				F1E81A12259BC3D100E8653C /* HeadingView.swift in Sources */,
 			);
