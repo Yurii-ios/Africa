@@ -32,6 +32,7 @@
 		F17C364B25966E76005D94A0 /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C364A25966E76005D94A0 /* CoverImageView.swift */; };
 		F17C3650259676AC005D94A0 /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C364F259676AC005D94A0 /* CoverImageModel.swift */; };
 		F17C365425968A24005D94A0 /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C365325968A24005D94A0 /* CodableBundleExtension.swift */; };
+		F1E81A09259B8C3F00E8653C /* AnimalListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E81A08259B8C3F00E8653C /* AnimalListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		F17C364A25966E76005D94A0 /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
 		F17C364F259676AC005D94A0 /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
 		F17C365325968A24005D94A0 /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
+		F1E81A08259B8C3F00E8653C /* AnimalListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				F17C364A25966E76005D94A0 /* CoverImageView.swift */,
+				F1E81A08259B8C3F00E8653C /* AnimalListItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F17C360F25964333005D94A0 /* ContentView.swift in Sources */,
+				F1E81A09259B8C3F00E8653C /* AnimalListItemView.swift in Sources */,
 				F17C3647259661E7005D94A0 /* MainView.swift in Sources */,
 				F17C364B25966E76005D94A0 /* CoverImageView.swift in Sources */,
 				F17C3650259676AC005D94A0 /* CoverImageModel.swift in Sources */,
