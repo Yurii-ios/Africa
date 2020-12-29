@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F179EAA9259BDA7800546E16 /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179EAA8259BDA7800546E16 /* InsetMapView.swift */; };
 		F17C360D25964333005D94A0 /* AfricaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C360C25964333005D94A0 /* AfricaApp.swift */; };
 		F17C360F25964333005D94A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C360E25964333005D94A0 /* ContentView.swift */; };
 		F17C361125964333005D94A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17C361025964333005D94A0 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F179EAA8259BDA7800546E16 /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 		F17C360925964333005D94A0 /* Africa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Africa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17C360C25964333005D94A0 /* AfricaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricaApp.swift; sourceTree = "<group>"; };
 		F17C360E25964333005D94A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				F1E81A11259BC3D100E8653C /* HeadingView.swift */,
 				F1E81A14259BC6CA00E8653C /* InsetGalleryView.swift */,
 				F1E81A17259BD12D00E8653C /* InsetFactView.swift */,
+				F179EAA8259BDA7800546E16 /* InsetMapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				F1E81A0F259BBAC200E8653C /* AnimalDetailView.swift in Sources */,
 				F1E81A0C259B90A900E8653C /* AnimalModel.swift in Sources */,
 				F17C3641259661AC005D94A0 /* MapView.swift in Sources */,
+				F179EAA9259BDA7800546E16 /* InsetMapView.swift in Sources */,
 				F17C360D25964333005D94A0 /* AfricaApp.swift in Sources */,
 				F17C363E25966173005D94A0 /* VideoListView.swift in Sources */,
 				F17C3644259661CA005D94A0 /* GalleryView.swift in Sources */,

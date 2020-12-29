@@ -17,7 +17,7 @@ struct AnimalDetailView: View {
                 // hero image
                 Image(animal.image)
                     .resizable()
-                    .scaledToFill()
+                    .scaledToFit()
                 // title
                 Text(animal.name.uppercased())
                     .font(.largeTitle)
@@ -52,9 +52,20 @@ struct AnimalDetailView: View {
                 .padding(.horizontal)
                 
                 // description
+                Group {
+                    HeadingView(headingImage: "info.circle", headingText: "All about \(animal.name)")
+                    Text(animal.description)
+                        .multilineTextAlignment(.leading)
+                        .layoutPriority(1)
+                }
+                .padding(.horizontal)
                 
                 // map
-                
+                Group {
+                    HeadingView(headingImage: "map", headingText: "National Parks")
+                    InsetMapView()
+                }
+                .padding(.horizontal)
                 // link
             } //: VSTACK
             .navigationBarTitle("Lern about \(animal.name)", displayMode: .inline)
