@@ -9,15 +9,31 @@ import SwiftUI
 
 struct VideoListView: View {
     //MARK: - PROPERTIES
-    var videos: [VideoModel] = Bundle.main.decode("videos.json")
+   @State var videos: [VideoModel] = Bundle.main.decode("videos.json")
     //MARK: - BODY
     var body: some View {
         NavigationView {
-            List {
+            List() {
                 ForEach(videos) { item in
                     VideoListItemView(video: item)
-                }
+                        .padding(.vertical, 8)
+                } //: ForEach
             } //: List
+            
+            // add gray background color for list items
+            .listStyle(InsetGroupedListStyle())
+            // fix empty space in top
+            .navigationBarTitle("Videos", displayMode: .inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        // shuffle videos
+                        videos.shuffle()
+                    }) {
+                       Image(systemName: "arrow.2.squarepath")
+                    }
+                }
+            }
         } //: NavigationView
     }
 }
