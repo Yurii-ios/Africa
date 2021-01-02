@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F102F0AB25A10F0A004BD757 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F102F0AA25A10F0A004BD757 /* VideoPlayerView.swift */; };
+		F102F0AF25A11224004BD757 /* VideoPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F102F0AE25A11224004BD757 /* VideoPlayerHelper.swift */; };
 		F12C154E259E51A300A4BCDD /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C154D259E51A300A4BCDD /* VideoModel.swift */; };
 		F12C1551259E6D2100A4BCDD /* VideoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C1550259E6D2100A4BCDD /* VideoListItemView.swift */; };
 		F179EAA9259BDA7800546E16 /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179EAA8259BDA7800546E16 /* InsetMapView.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		F102F0AA25A10F0A004BD757 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		F102F0AE25A11224004BD757 /* VideoPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerHelper.swift; sourceTree = "<group>"; };
 		F12C154D259E51A300A4BCDD /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		F12C1550259E6D2100A4BCDD /* VideoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItemView.swift; sourceTree = "<group>"; };
 		F179EAA8259BDA7800546E16 /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F102F0AD25A111F2004BD757 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F102F0AE25A11224004BD757 /* VideoPlayerHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		F17C360025964332005D94A0 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +126,7 @@
 		F17C360B25964333005D94A0 /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				F102F0AD25A111F2004BD757 /* Helper */,
 				F17C365225968788005D94A0 /* Extension */,
 				F17C363C259660FC005D94A0 /* App */,
 				F17C364925966E48005D94A0 /* View */,
@@ -306,6 +317,7 @@
 				F1E81A0F259BBAC200E8653C /* AnimalDetailView.swift in Sources */,
 				F1E81A0C259B90A900E8653C /* AnimalModel.swift in Sources */,
 				F17C3641259661AC005D94A0 /* MapView.swift in Sources */,
+				F102F0AF25A11224004BD757 /* VideoPlayerHelper.swift in Sources */,
 				F179EAA9259BDA7800546E16 /* InsetMapView.swift in Sources */,
 				F17C360D25964333005D94A0 /* AfricaApp.swift in Sources */,
 				F17C363E25966173005D94A0 /* VideoListView.swift in Sources */,
