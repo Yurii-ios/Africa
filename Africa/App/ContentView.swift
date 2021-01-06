@@ -13,28 +13,34 @@ struct ContentView: View {
     let haptics = UIImpactFeedbackGenerator(style: .medium)
     
     @State private var isGridViewActive: Bool = false
-   
+    
     //MARK: - BODY
     var body: some View {
         NavigationView {
-            List {
-                CoverImageView()
-                    .frame(height: 300)
-                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
-                
-                ForEach(animals) { animal in
-                    NavigationLink(destination: AnimalDetailView(animal: animal)) {
-                        AnimalListItemView(animal: animal)
-                    } //: LINK
-                }
-            } //: List
+            Group {
+                if !isGridViewActive {
+                    List {
+                        CoverImageView()
+                            .frame(height: 300)
+                            .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                        
+                        ForEach(animals) { animal in
+                            NavigationLink(destination: AnimalDetailView(animal: animal)) {
+                                AnimalListItemView(animal: animal)
+                            } //: LINK
+                        } //: loop
+                    } //: list
+                } else {
+                    Text("Grid view is active")
+                } //: condition
+            } //: Group
             .navigationBarTitle("Africa",displayMode: .large)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     HStack(spacing: 16) {
                         // List
                         Button(action: {
-                           print("list view i activated")
+                            print("list view i activated")
                             isGridViewActive = false
                             haptics.impactOccurred()
                         }) {
@@ -57,7 +63,7 @@ struct ContentView: View {
                 } //: buttons
             } //: toolbar
         } //: Navigation
-    
+        
     }
 }
 
