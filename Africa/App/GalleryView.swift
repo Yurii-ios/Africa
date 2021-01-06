@@ -12,15 +12,16 @@ struct GalleryView: View {
     @State private var selectedAnimal: String = "lion"
     
     let animals: [AnimalModel] = Bundle.main.decode("animals.json")
+    let haptics = UIImpactFeedbackGenerator(style: .medium)
     // SIMPLE GRID DEFINITION
-//    let gridLayout: [GridItem] = [
-//        GridItem(.flexible()),
-//        GridItem(.flexible()),
-//        GridItem(.flexible())
-//    ]
+    //    let gridLayout: [GridItem] = [
+    //        GridItem(.flexible()),
+    //        GridItem(.flexible()),
+    //        GridItem(.flexible())
+    //    ]
     
     // EFFICIENT GRID DEFINITION
-   // let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 3)
+    // let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 3)
     
     // DYNAMIC GRID LAYOUT
     @State private var gridLayout: [GridItem] = [GridItem(.flexible())]
@@ -59,6 +60,7 @@ struct GalleryView: View {
                             .overlay(Circle().stroke(Color.white, lineWidth: 1))
                             .onTapGesture {
                                 selectedAnimal = item.image
+                                haptics.impactOccurred()
                             }
                         //Text("Gallery")
                     } //: ForEach
