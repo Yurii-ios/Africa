@@ -63,6 +63,8 @@ struct GalleryView: View {
                         //Text("Gallery")
                     } //: ForEach
                 } //: GRID
+                // animated transition item columns
+                .animation(.easeIn)
                 .onAppear(perform: {
                     gridSwich()
                 })
