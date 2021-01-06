@@ -25,6 +25,18 @@ struct ContentView: View {
         gridLayout = Array(repeating: .init(.flexible()), count: gridLayout.count % 3 + 1)
         gridColumn = gridLayout.count
         print("grid number: \(gridColumn)")
+        
+        // toolbar image
+        switch gridColumn {
+        case 1:
+            toolbarIcon = "square.grid.2x2"
+        case 2:
+            toolbarIcon = "square.grid.3x2"
+        case 3:
+            toolbarIcon = "rectangle.grid.1x2"
+        default:
+            toolbarIcon = "square.grid.2x2"
+        }
     }
     
     //MARK: - BODY
@@ -80,7 +92,7 @@ struct ContentView: View {
                             haptics.impactOccurred()
                             gridSwitch()
                         }) {
-                            Image(systemName: "square.grid.2x2")
+                            Image(systemName: toolbarIcon)
                                 .font(.title2)
                                 .foregroundColor(isGridViewActive ? .accentColor : .primary)
                         }
