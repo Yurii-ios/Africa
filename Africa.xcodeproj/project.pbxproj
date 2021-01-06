@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,7 +16,7 @@
 		F1440FB725A25BEA00E377BC /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1440FB625A25BEA00E377BC /* MotionAnimationView.swift */; };
 		F165E39325A642D4005CA0B8 /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165E39225A642D4005CA0B8 /* AnimalGridItemView.swift */; };
 		F165E39A25A65589005CA0B8 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F165E39925A65589005CA0B8 /* Stickers.xcassets */; };
-		F165E39E25A65589005CA0B8 /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F165E39725A65586005CA0B8 /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F165E39E25A65589005CA0B8 /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F165E39725A65586005CA0B8 /* Stickers.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F165E3A825A65DE1005CA0B8 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165E3A725A65DE1005CA0B8 /* CreditsView.swift */; };
 		F165E3AD25A66169005CA0B8 /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165E3AC25A66169005CA0B8 /* CenterModifier.swift */; };
 		F179EAA9259BDA7800546E16 /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179EAA8259BDA7800546E16 /* InsetMapView.swift */; };
@@ -92,6 +92,7 @@
 		F165E39B25A65589005CA0B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F165E3A725A65DE1005CA0B8 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		F165E3AC25A66169005CA0B8 /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
+		F165E3B225A665A5005CA0B8 /* Africa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Africa.entitlements; sourceTree = "<group>"; };
 		F179EAA8259BDA7800546E16 /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 		F179EAAB259BE55C00546E16 /* ExternalWeblinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalWeblinkView.swift; sourceTree = "<group>"; };
 		F17C360925964333005D94A0 /* Africa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Africa.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,6 +187,7 @@
 		F17C360B25964333005D94A0 /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				F165E3B225A665A5005CA0B8 /* Africa.entitlements */,
 				F165E3AB25A660EF005CA0B8 /* Modifier */,
 				F102F0AD25A111F2004BD757 /* Helper */,
 				F17C365225968788005D94A0 /* Extension */,
@@ -437,6 +439,7 @@
 /* Begin PBXTargetDependency section */
 		F165E39D25A65589005CA0B8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = F165E39625A65586005CA0B8 /* Stickers */;
 			targetProxy = F165E39C25A65589005CA0B8 /* PBXContainerItemProxy */;
 		};
@@ -454,6 +457,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sameliuk.Africa.Stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -469,6 +473,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sameliuk.Africa.Stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -594,6 +599,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Africa/Africa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Africa/Preview Content\"";
 				DEVELOPMENT_TEAM = RB6XL782P8;
@@ -606,6 +612,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sameliuk.Africa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -616,6 +623,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Africa/Africa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Africa/Preview Content\"";
 				DEVELOPMENT_TEAM = RB6XL782P8;
@@ -628,6 +636,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sameliuk.Africa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
