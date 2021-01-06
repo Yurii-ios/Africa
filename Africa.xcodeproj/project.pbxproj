@@ -18,6 +18,7 @@
 		F165E39A25A65589005CA0B8 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F165E39925A65589005CA0B8 /* Stickers.xcassets */; };
 		F165E39E25A65589005CA0B8 /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F165E39725A65586005CA0B8 /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F165E3A825A65DE1005CA0B8 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165E3A725A65DE1005CA0B8 /* CreditsView.swift */; };
+		F165E3AD25A66169005CA0B8 /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165E3AC25A66169005CA0B8 /* CenterModifier.swift */; };
 		F179EAA9259BDA7800546E16 /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179EAA8259BDA7800546E16 /* InsetMapView.swift */; };
 		F179EAAC259BE55C00546E16 /* ExternalWeblinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179EAAB259BE55C00546E16 /* ExternalWeblinkView.swift */; };
 		F17C360D25964333005D94A0 /* AfricaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C360C25964333005D94A0 /* AfricaApp.swift */; };
@@ -90,6 +91,7 @@
 		F165E39925A65589005CA0B8 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		F165E39B25A65589005CA0B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F165E3A725A65DE1005CA0B8 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		F165E3AC25A66169005CA0B8 /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
 		F179EAA8259BDA7800546E16 /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 		F179EAAB259BE55C00546E16 /* ExternalWeblinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalWeblinkView.swift; sourceTree = "<group>"; };
 		F17C360925964333005D94A0 /* Africa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Africa.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +157,14 @@
 			path = Stickers;
 			sourceTree = "<group>";
 		};
+		F165E3AB25A660EF005CA0B8 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				F165E3AC25A66169005CA0B8 /* CenterModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
 		F17C360025964332005D94A0 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +186,7 @@
 		F17C360B25964333005D94A0 /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				F165E3AB25A660EF005CA0B8 /* Modifier */,
 				F102F0AD25A111F2004BD757 /* Helper */,
 				F17C365225968788005D94A0 /* Extension */,
 				F17C363C259660FC005D94A0 /* App */,
@@ -415,6 +426,7 @@
 				F165E3A825A65DE1005CA0B8 /* CreditsView.swift in Sources */,
 				F17C365425968A24005D94A0 /* CodableBundleExtension.swift in Sources */,
 				F1440FB725A25BEA00E377BC /* MotionAnimationView.swift in Sources */,
+				F165E3AD25A66169005CA0B8 /* CenterModifier.swift in Sources */,
 				F1E81A12259BC3D100E8653C /* HeadingView.swift in Sources */,
 				F102F0AB25A10F0A004BD757 /* VideoPlayerView.swift in Sources */,
 			);
